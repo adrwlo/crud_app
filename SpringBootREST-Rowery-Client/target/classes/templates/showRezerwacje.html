@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShowRezerwacje</title>
+</head>
+<body>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Fredoka&family=Raleway:wght@500&family=Ubuntu:wght@300&display=swap');
+        *{
+            box-sizing: border-box;
+            margin: 0 auto;
+            font-family: 'Comfortaa', cursive;
+            font-family: 'Fredoka', sans-serif;
+            font-family: 'Raleway', sans-serif;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        body {
+            background-color:white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 50px;
+        }
+        h1{
+            font-size: 40px;
+            color: black;
+            margin-bottom: 80px;
+        }
+        table th {
+            background-color: orange;
+            padding: 15px;
+            text-align: center;
+            font-weight: 900;
+            color: black;
+            font-size: 18px;
+        }
+        table td {
+            padding: 15px;
+            text-align: center;
+            background-color: gray;
+            color: white;
+        }
+        table a {
+            color:white;
+            font-weight: 600;
+        }
+
+    </style>
+
+    <h1>Lista rezerwacji</h1>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Imie</th>
+                <th>Nazwisko</th>
+                <th>Numer telefonu</th>
+                <th>Data rezerwacji</th>
+                <th>Rodzaj roweru</th>
+                <th>Edytuj rezerwacje</th>
+                <th>Usuń rezerwacje</th>
+            </tr>
+            <tr th:each="rezerwacja : ${rezerwacje}">
+                <td th:utext="${rezerwacja.id}">...</td>
+                <td th:utext="${rezerwacja.imie}">...</td>
+                <td th:utext="${rezerwacja.nazwisko}">...</td>
+                <td th:utext="${rezerwacja.numer_tel}">...</td>
+                <td th:utext="${rezerwacja.data_rezerwacji}">...</td>
+                <td th:utext="${rezerwacja.rodzaj_roweru}">...</td>
+                
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

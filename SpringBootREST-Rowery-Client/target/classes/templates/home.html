@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Fredoka&family=Raleway:wght@500&family=Ubuntu:wght@300&display=swap');
+        *{
+            box-sizing: border-box;
+            margin: 0 auto;
+            font-family: 'Comfortaa', cursive;
+            font-family: 'Fredoka', sans-serif;
+            font-family: 'Raleway', sans-serif;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 150px;
+        }
+        h1{
+            font-size: 40px;
+            color: white;
+        }
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            margin-top: 100px;
+        }
+        button {
+            margin-right: 20px;
+            margin-left: 20px;
+            width: 300px;
+            font-size: 20px;
+            padding: 10px;
+            background-color: orange;
+            border-style: none;
+            border-radius: 25px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+                        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+        button a {
+            text-decoration: none;
+            color:white;
+            font-weight: 700;
+        }
+        button:hover {
+            transition: 0.3s all ease-in-out;
+        }
+    </style>
+
+    <h1>Witamy w systemie rezerwacji rowerów</h1>
+    <div class="btn-container">     
+        <button><a href="crudRezerwacje">Sprawdź rezerwacje klientów</a></button> 
+        <button><a href="dodajRezerwacjaForm">Dokonaj nowej rezerwacji</a></button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz Dodawania</title>
+</head>
+<body>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Fredoka&family=Raleway:wght@500&family=Ubuntu:wght@300&display=swap');
+        *{
+            box-sizing: border-box;
+            margin: 0 auto;
+            font-family: 'Comfortaa', cursive;
+            font-family: 'Fredoka', sans-serif;
+            font-family: 'Raleway', sans-serif;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        h1 {
+            margin-bottom: 50px;
+            font-size: 35px;
+        }
+        .container {
+            display: flex;
+        }
+        .form-container {
+            margin-top: 100px;
+            margin-left: 300px;
+            width: 25%;
+            height: auto;
+            background-color: orange;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 60px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+                        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+        .form-container input {
+            width: 250px;
+            height: 40px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+                        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            border-style: none;
+            font-size: 18px;
+            padding-left: 15px;
+        }
+
+        .form-container select {
+            width: 250px;
+            height: 40px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+                        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            border-style: none;
+            font-size: 18px;
+            padding-left: 15px;
+        }
+
+        .form-container button {
+            width: 250px;
+            height: 40px;
+            margin-top: 20px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+                        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            border-style: none;
+            background-color: black;
+        }
+        .form-container a {
+            font-size: 17px;
+            text-decoration: none;
+            color:white;
+            font-weight: 900;
+        }
+
+        select {
+            font-size: 18px;
+            padding-left: 15px;
+        }
+
+        select option {
+            font-size: 18px;
+            padding-left: 15px;
+        }
+
+        :placeholder-shown {
+            font-size: 18px;
+            padding-left: 15px;
+        }
+
+        .data {
+            font-size: 18px;
+            padding-left: 15px;
+        }
+
+        .img-container {
+            width: 50%;
+            height: auto;
+            background-color: blue;
+        }
+    </style>
+
+    
+    <div class="container">
+
+        <form class="form-container">
+            <h1>Formularz dodawania</h1>
+            <input type="text" name="id" placeholder="Id"><br>
+            <input type="text" name="imie" placeholder="Imie"><br>
+            <input type="text" name="nazwisko" placeholder="Nazwisko"><br>
+            <input type="text" name="numerTel" placeholder="Numer telefonu"><br>
+            <input type="datetime-local" name="data" class="data"><br>
+            <select>
+                <option value="" selected>Rodzaj roweru</option>
+                <option value="">Górski</option>
+                <option value="">Szosowy</option>
+                <option value="">Miejski</option>
+            </select><br>
+            <button><a href="">Dodaj</a></button>
+
+        </form>
+
+        <div class="img-container">
+
+        </div>
+
+    </div>
+</body>
+</html>
